@@ -13,7 +13,7 @@ def test_fair_sharer():
 
     # Test with negative values
     result = fair_sharer([-200, 500, -300, 100], 1)
-    assert np.allclose(result, np.array([0, 300, 400, -100]), atol=1e-5, rtol=1e-5)
+    assert np.allclose(result, np.array([-150, 400, -250, 100]), atol=1e-5, rtol=1e-5)
 
 
 # Führe die Tests aus, wenn die Datei direkt ausgeführt wird
