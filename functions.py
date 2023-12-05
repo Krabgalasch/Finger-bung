@@ -59,5 +59,5 @@ def fair_sharer(values, num_iterations, share=0.1):
         counter += 1
         print(f'Your new values:{values_new}')
     return  values_new, print("\n\n")
-
+"""
 
