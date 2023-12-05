@@ -1,4 +1,4 @@
-from functions.py import fair_sharer 
+from functions import fair_sharer 
 import pytest
 import numpy as np
 
