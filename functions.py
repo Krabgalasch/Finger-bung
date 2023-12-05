@@ -1,3 +1,5 @@
+import numpy as np
+
 def fair_sharer(values, num_iterations, share=0.1):
     """Runs num_iterations.
     In each iteration the highest value in values gives a fraction (share)
@@ -10,10 +12,9 @@ def fair_sharer(values, num_iterations, share=0.1):
     num_iteration:
     Integer to set the number of iterations
     """
-    # code
+    values_new = np.array(values) 
     counter = 0
     while counter <= num_iterations - 1:
-        values_new = values
         print(f'Old values:{values_new}')
         share_value = max(values) * share
 
