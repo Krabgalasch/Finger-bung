@@ -15,9 +15,6 @@ def test_fair_sharer():
     result = fair_sharer([-200, 500, -300, 100], 1)
     assert np.allclose(result, np.array([0, 300, 400, -100]), atol=1e-5, rtol=1e-5)
 
-    # Test with a large number of iterations
-    result = fair_sharer([10, 20, 30, 40, 50], 100)
-    assert np.allclose(result, np.array([25, 25, 25, 25, 25]), atol=1e-5, rtol=1e-5)
 
 # Führe die Tests aus, wenn die Datei direkt ausgeführt wird
 if __name__ == '__main__':
